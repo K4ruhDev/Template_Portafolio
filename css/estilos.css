@@ -1,0 +1,313 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: #fcfcfc;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+
+/* ----- ----- HEADER ----- ----- */
+header {
+	background: linear-gradient(to bottom, #2E3192 , #1BFFFF);
+	background-repeat: no-repeat;
+	max-height: 600px;
+}
+
+header .menu {
+	margin: 40px 0;
+	text-align: right;
+}
+
+header .menu a {
+	margin: 0 20px;
+	color: #fff;
+	padding-bottom: 9px;
+	display: inline-block;
+	text-decoration: none;
+	border-bottom: 2px solid transparent;
+	font-size: 1em;
+}
+
+header .menu a:hover {
+	border-bottom:2px solid #fff;
+}
+
+header .contenedor-texto {
+	display: flex;
+	justify-content:center;
+	align-content:center;
+	margin: 190px 0;
+}
+
+header .contenedor-texto .texto {
+	border:2px solid rgba(255,255,255,0.5);
+	border-radius: 3px;
+	display: inline-block;
+	text-align: center;
+	padding: 20px 60px;
+}
+
+header .contenedor-texto .texto h1,
+header .contenedor-texto .texto h2 {
+	color: #fff;
+	font-weight: 300;
+	margin: 0;
+}
+
+header .contenedor-texto .texto .nombre {
+	margin-bottom: 10px;
+	font-size: 50px;
+	line-height: 50px;
+}
+
+header .contenedor-texto .texto .profesion {
+	font-size: 25px;
+	line-height: 25px;
+}
+
+/* ----- ----- MAIN ----- ----- */
+.main .contenedor {
+	overflow: visible;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	box-shadow: 50px 5px 5px black;
+}
+
+.main .acerca-de {
+	text-align: center;
+}
+
+.main .acerca-de .foto {
+	margin-top: -150px;
+}
+
+.main .acerca-de .foto .target {
+	padding: 40px;
+}
+
+.main .acerca-de .foto .target .card-body .titulo{
+	font-size: 32px;
+	padding-bottom: 20px;
+}
+
+.main .acerca-de .foto .target .card-body .descripcion{
+	font-size: 20px;
+	line-height: 150%;
+	color: #6e7373;
+}
+
+.main .acerca-de .foto .redes-sociales {
+	background: #1e2b38;
+	padding: 10px 0;
+	
+}
+
+
+.main .acerca-de .foto .redes-sociales a {
+	color: #000;
+	display: inline;
+	padding: 15px 0;
+	border-radius: 10px;
+	font-size: 16px;
+	margin: 0 20px;
+}
+
+.main .acerca-de .foto .redes-sociales .twitter:hover {	color: #1da1f2; }
+.main .acerca-de .foto .redes-sociales .facebook:hover { color: #3b5998; }
+.main .acerca-de .foto .redes-sociales .youtube:hover {	color: #cd201f; }
+.main .acerca-de .foto .redes-sociales .github:hover { color: #666666; }
+.main .acerca-de .foto .redes-sociales .instagram:hover { color: #3f729b; }
+
+.main .acerca-de .foto img {
+	vertical-align: top;
+	border-radius: 50%;
+	border: 5px solid rgba(255,255,255,0.2);
+}
+
+.main .acerca-de .texto {
+	color: #5a5a5a;
+	font-weight: 600;
+	font-size: 1em;
+	line-height: 30px;
+	width: 80%;
+	margin: 40px auto 60px auto;
+}
+
+.main .acerca-de .texto .titulo {
+	font-size: 34px;
+	line-height: 34px;
+	margin-bottom: 40px;
+	font-weight: 300;
+	color: #dd820d;
+	text-align: center;
+}
+
+.main .acerca-de .texto .bold {
+	color: #3895ea;
+	text-decoration: underline;
+}
+
+.main .trabajos {
+	background: #fcfcfc;
+	padding: 60px 0;
+}
+
+.main .trabajos .contenedor {
+	overflow: hidden;
+}
+
+.main .trabajos .titulo {
+	font-size: 34px;
+	line-height: 34px;
+	margin-bottom: 40px;
+	font-weight: 300;
+	color: #323068;
+	text-align: center;
+}
+
+.main .trabajos .contenedor-trabajos {
+	display: flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo{
+	width: 23%;
+	margin-bottom: 40px;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .thumb {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .thumb img {
+	width: 100%;
+	vertical-align: top;
+	border-radius: 10px;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .descripcion {
+	text-align: center;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .descripcion .nombre {
+	font-weight: 700;
+	color: #3895ea;
+	margin-bottom: 10px;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .descripcion .categoria {
+	font-size: 14px;
+	color:#636363;
+}
+
+/* ----- ----- CONTACTO ----- ----- */
+
+.contacto {
+	padding: 60px 0;
+}
+
+ .contacto .titulo {
+	font-size: 34px;
+	line-height: 34px;
+	margin-bottom: 40px;
+	font-weight: 200;
+	color: #323068;
+	text-align: center;
+}
+
+ .contacto .formulario {
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+
+
+ .contacto .formulario input[type="text"],
+ .contacto .formulario input[type="email"] {
+	width: 49%;
+	margin-bottom: 15px;
+}
+
+ .contacto .formulario textarea {
+	width: 100%;
+	height: 100px;
+	min-width: 100%;
+	max-width: 100%;
+	min-height:100px;
+	max-height: 300px;
+	margin-bottom: 15px;
+}
+
+ .contacto .formulario .boton {
+	margin: auto;
+	background: #593EFF;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	padding: 12px 50px;
+	cursor: pointer;
+}
+
+ .contacto .formulario .boton:hover {
+	background: #387bea;
+}
+
+
+/* ----- ----- FOOTER ----- ----- */
+
+.footer {
+    margin-top: 0;
+	padding: 50px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	background: linear-gradient(to top, #2E3192 , #249AC9);
+	color: #fff;
+}
+
+/* ----- ----- BARRA DESPLAZAMIENTO ----- ----- */
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+
+/* ----- ----- MEDIA QUERIES ----- ----- */
+@media screen and (max-width: 800px) {
+	header .menu {
+		text-align: center;
+	}
+
+	.main .trabajos .contenedor-trabajos .trabajo {
+		width: 46%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	header .contenedor-texto .texto .nombre {
+		font-size: 35px;
+	}
+
+	header .contenedor-texto .texto .profesion {
+		font-size: 18px;
+	}
+
+	footer .redes-sociales .contenedor {
+		flex-wrap:wrap;
+		padding: 20px 0;
+	}
+}

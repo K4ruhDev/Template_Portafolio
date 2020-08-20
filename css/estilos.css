@@ -17,6 +17,24 @@ body {
 	overflow: hidden;
 }
 
+.contenido {
+	padding: 30px;
+}
+
+.servicios {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.servicios .card .sobreposicion{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* ----- ----- HEADER ----- ----- */
 header {
 	background: linear-gradient(to bottom, #2E3192 , #1BFFFF);
@@ -174,6 +192,15 @@ header .contenedor-texto .texto .profesion {
 }
 
 .main .trabajos .titulo {
+	font-size: 34px;
+	line-height: 34px;
+	margin-bottom: 40px;
+	font-weight: 300;
+	color: #323068;
+	text-align: center;
+}
+
+.main .servicio .titulo {
 	font-size: 34px;
 	line-height: 34px;
 	margin-bottom: 40px;

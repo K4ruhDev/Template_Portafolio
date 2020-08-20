@@ -79,10 +79,12 @@ header .contenedor-texto .texto .profesion {
 /* ----- ----- MAIN ----- ----- */
 .main .contenedor {
 	overflow: visible;
-	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	display: flex;
 }
+
+
 
 .main .acerca-de {
 	text-align: center;
@@ -156,6 +158,10 @@ header .contenedor-texto .texto .profesion {
 .main .acerca-de .texto .bold {
 	color: #3895ea;
 	text-decoration: underline;
+}
+
+.main .contenedor .card{
+	box-shadow:  9px 9px 45px -5px rgba(0,0,0,0.6);
 }
 
 .main .trabajos {

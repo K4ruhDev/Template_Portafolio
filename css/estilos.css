@@ -35,6 +35,35 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.servicios img{
+	height: 180px;
+}
+
+.educacion {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.educacion .card .sobreposicion{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.educacion .btn{
+	padding: .1rem .2rem;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.educacion h5, .educacion p, .educacion a{
+	text-align: center;
+}
+
+
 /* ----- ----- HEADER ----- ----- */
 header {
 	background: linear-gradient(to bottom, #2E3192 , #1BFFFF);

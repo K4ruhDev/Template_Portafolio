@@ -12,7 +12,7 @@ body {
 
 .contenedor {
 	width: 90%;
-	max-width: 1000px;
+	max-width: 1200px;
 	margin: auto;
 	overflow: hidden;
 }
@@ -23,7 +23,7 @@ body {
 
 .servicios {
 	width: 90%;
-	max-width: 1000px;
+	max-width: 1200px;
 	margin: auto;
 	overflow: hidden;
 }
@@ -41,7 +41,7 @@ body {
 
 .educacion {
 	width: 90%;
-	max-width: 1000px;
+	max-width: 1200px;
 	margin: auto;
 	overflow: hidden;
 }
@@ -208,7 +208,7 @@ header .contenedor-texto .texto .profesion {
 }
 
 .main .contenedor .card{
-	box-shadow:  9px 9px 45px -5px rgba(0,0,0,0.6);
+	box-shadow:  3px 3px 15px -5px rgba(0,0,0,0.3);
 }
 
 .main .trabajos {

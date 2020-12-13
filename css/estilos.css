@@ -5,7 +5,7 @@
 }
 
 body {
-	background: #fcfcfc;
+	background: #F6F6F8;
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 }
@@ -15,6 +15,10 @@ body {
 	max-width: 1200px;
 	margin: auto;
 	overflow: hidden;
+}
+
+.card{
+	border-radius: 10px;
 }
 
 .contenido {
@@ -27,6 +31,8 @@ body {
 	margin: auto;
 	overflow: hidden;
 }
+
+
 
 .servicios .card .sobreposicion{
 	position: absolute;
@@ -41,7 +47,21 @@ body {
 
 .educacion {
 	width: 90%;
-	max-width: 1200px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.educacion h5{
+	margin-top: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.educacion p{
+	margin-bottom: 10px;
+}
+
+.educacion .certificaciones {
 	margin: auto;
 	overflow: hidden;
 }
@@ -212,7 +232,6 @@ header .contenedor-texto .texto .profesion {
 }
 
 .main .trabajos {
-	background: #fcfcfc;
 	padding: 60px 0;
 }
 
@@ -232,6 +251,16 @@ header .contenedor-texto .texto .profesion {
 .main .servicio .titulo {
 	font-size: 34px;
 	line-height: 34px;
+	margin-bottom: 40px;
+	font-weight: 300;
+	color: #323068;
+	text-align: center;
+}
+
+.main .educacion .titulo {
+	font-size: 34px;
+	line-height: 34px;
+	margin-top: 40px;
 	margin-bottom: 40px;
 	font-weight: 300;
 	color: #323068;
@@ -404,6 +433,14 @@ header .contenedor-texto .texto .profesion {
 }
 
 /* ----- ----- PORTAFOLIO ----- ----- */
+.Proyectos .contenedor{
+	max-width: 100%;
+}
+
+.Proyectos .contenedor .card img{
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
 
 .Proyectos .contenedor .card .btn{
 	margin-top: 10px;

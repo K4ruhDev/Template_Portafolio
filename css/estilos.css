@@ -479,6 +479,128 @@ header .contenedor-texto .texto .profesion {
     padding: 30px 0;
 }
 
+.Proyectos .card:hover {
+    transform: scale(1.03);
+}
+
+#filters {
+    margin: 1%;
+    padding: 0;
+    list-style: none;
+}
+
+#filters li {
+    float: left;
+}
+
+#filters li span {
+    display: block;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #666;
+    cursor: pointer;
+}
+
+#filters li span.active {
+    background: #e95a44;
+    color: #fff;
+}
+
+#portfoliolist .portfolio {
+    width: 23%;
+    margin: 1%;
+    display: none;
+    float: left;
+    overflow: hidden;
+}
+
+.Proyectos .card {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+/* #Tablet (Portrait) */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .container {
+        width: 768px;
+    }
+}
+
+
+/*  #Mobile (Portrait) - Note: Design for a width of 320px */
+
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 95%;
+    }
+    #portfoliolist .portfolio {
+        width: 48%;
+        margin: 1%;
+    }
+    #ads {
+        display: none;
+    }
+}
+
+
+/* #Mobile (Landscape) - Note: Design for a width of 480px */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+        width: 70%;
+    }
+    #ads {
+        display: none;
+    }
+}
+
+
+/* #Clearing */
+
+
+/* Self Clearing Goodness */
+
+.container:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.row:after,
+.clearfix:after {
+    clear: both;
+}
+
+.row,
+.clearfix {
+    zoom: 1;
+}
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
 
 /* ----- ----- BLOG ----- ----- */
 

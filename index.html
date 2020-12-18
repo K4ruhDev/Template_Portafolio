@@ -285,12 +285,25 @@
             </div>
         </section>
 
+
+
         <!-- Proyectos -->
         <section class="Proyectos">
+            <h3 class="titulo">Proyectos</h3>
             <div class="contenedor">
-                <h3 class="titulo">Proyectos</h3>
-                <div class="row row-cols-1 row-cols-md-4 g-4">
-                    <div class="col">
+
+                <ul id="filters" class="clearfix">
+                    <li><span class="filter active" data-filter=".todo.bootstrap .javascript, .php, .java, .laravel, .pwa, .python ">Relevantes</span></li>
+                    <li><span class="filter" data-filter=".javascript">JavaScript</span></li>
+                    <li><span class="filter" data-filter=".php">PHP</span></li>
+                    <li><span class="filter" data-filter=".java">Java</span></li>
+                    <li><span class="filter" data-filter=".laravel">Laravel</span></li>
+                    <li><span class="filter" data-filter=".pwa">PWA</span></li>
+                    <li><span class="filter" data-filter=".python">Python</span></li>
+                </ul>
+
+                <div class="row row-cols-1 row-cols-md-4 g-4" id="portfoliolist">
+                    <div class="col portfolio card javascript pwa laravel todo" data-cat="javascript pwa laravel todo">
                         <div class="card h-100">
                             <a href="#">
                                 <img src="img/Portafolio/caratulas/FusaTour.jpg" class="card-img-top" alt="...">
@@ -307,7 +320,7 @@
                         </div>
                     </div>
 
-                    <div class="col">
+                    <div class="col portfolio javascript todo" data-cat="javascript todo">
                         <div class="card h-100">
                             <a href="#">
                                 <img src="img/Portafolio/caratulas/Template_Portafolio.png" class="card-img-top" alt="...">
@@ -323,7 +336,7 @@
                         </div>
                     </div>
 
-                    <div class="col">
+                    <div class="col portfolio php javascript todo" data-cat="php javascript todo">
                         <div class="card h-100">
                             <a href="#">
                                 <img src="img/Portafolio/caratulas/FreskyPan.png" class="card-img-top" alt="...">
@@ -339,7 +352,7 @@
                         </div>
                     </div>
 
-                    <div class="col">
+                    <div class="col portfolio javascript todo" data-cat="javascript todo">
                         <div class="card h-100">
                             <a href="#">
                                 <img src="img/Portafolio/caratulas/Template_Restaurante.png" class="card-img-top" alt="...">
@@ -353,7 +366,7 @@
                         </div>
                     </div>
 
-                    <div class="col">
+                    <div class="col portfolio javascript todo" data-cat="javascript todo">
                         <div class="card h-100">
                             <a href="#">
                                 <img src="img/Portafolio/caratulas/Realidad_Virtual.png" class="card-img-top" alt="...">
@@ -368,7 +381,7 @@
                         </div>
                     </div>
 
-                    <div class="col">
+                    <div class="col portfolio bootstrap todo" data-cat="bootstrap todo">
                         <div class="card h-100">
                             <a href="#">
                                 <img src="img/Portafolio/caratulas/Template_FlexBox.png" class="card-img-top" alt="...">
@@ -382,7 +395,7 @@
                         </div>
                     </div>
 
-                    <div class="col">
+                    <div class="col portfolio javascript python todo" data-cat="javascript python todo">
                         <div class="card h-100">
                             <a href="#">
                                 <img src="img/Portafolio/caratulas/Perceptron.png" class="card-img-top" alt="...">
@@ -400,7 +413,7 @@
                         </div>
                     </div>
 
-                    <div class="col">
+                    <div class="col portfolio javascript php todo" data-cat="javascript php todo">
                         <div class="card h-100">
                             <a href="#">
                                 <img src="img/Portafolio/caratulas/OWASP_PHP.png" class="card-img-top" alt="...">
@@ -413,12 +426,12 @@
                                 <span href="#" class="btn btn-outline-primary btn-sm">JavaScript</span>
                                 <span href="#" class="btn btn-outline-primary btn-sm">jQuery</span>
                                 <span href="#" class="btn btn-outline-primary btn-sm">MySQL</span>
-                                <span href="#" class="btn btn-outline-primary btn-sm">Python</span>
+                                <span href="#" class="btn btn-outline-primary btn-sm">PHP</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col">
+                    <div class="col portfolio bootstrap todo" data-cat="bootstrap todo">
                         <div class="card h-100">
                             <a href="#">
                                 <img src="img/Portafolio/caratulas/Template_Material_Design.png" class="card-img-top" alt="...">
@@ -432,9 +445,12 @@
                         </div>
                     </div>
 
+
                 </div>
+
             </div>
         </section>
+
 
         <!-- Blog -->
         <section class="blog">
@@ -528,8 +544,38 @@
     </footer>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
     </script>
+
     <script type="text/javascript" src="js/mdb.js"></script>
     <script src="https://kit.fontawesome.com/629388bad9.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/mixitup.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+
+            var filterList = {
+
+                init: function() {
+                    $('#portfoliolist').mixItUp({
+                        selectors: {
+                            target: '.portfolio',
+                            filter: '.filter'
+                        },
+                        load: {
+                            filter: '.todo'
+                        }
+                    });
+
+                }
+
+            };
+
+            // Run the show!
+            filterList.init();
+
+
+        });
+    </script>
 
 </body>
 

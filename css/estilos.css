@@ -191,26 +191,6 @@ header .contenedor-texto .texto .profesion {
     margin: 0 20px;
 }
 
-.main .acerca-de .foto .redes-sociales .twitter:hover {
-    color: #1da1f2;
-}
-
-.main .acerca-de .foto .redes-sociales .facebook:hover {
-    color: #3b5998;
-}
-
-.main .acerca-de .foto .redes-sociales .youtube:hover {
-    color: #cd201f;
-}
-
-.main .acerca-de .foto .redes-sociales .github:hover {
-    color: #666666;
-}
-
-.main .acerca-de .foto .redes-sociales .instagram:hover {
-    color: #3f729b;
-}
-
 .main .acerca-de .foto img {
     vertical-align: top;
     border-radius: 50%;
@@ -480,12 +460,13 @@ header .contenedor-texto .texto .profesion {
 }
 
 .Proyectos .card:hover {
-    transform: scale(1.03);
+    transform: scale(1.01);
+    border-radius: 15px;
+    box-shadow: 3px 3px 15px -5px rgba(0, 0, 0, 0.644);
 }
 
 #filters {
-    margin: 1%;
-    padding: 0;
+    padding-bottom: 3%;
     list-style: none;
 }
 
@@ -502,8 +483,11 @@ header .contenedor-texto .texto .profesion {
 }
 
 #filters li span.active {
-    background: #e95a44;
-    color: #fff;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #0471DD;
+    color: #000;
+    border-radius: 10px;
 }
 
 #portfoliolist .portfolio {
@@ -511,7 +495,6 @@ header .contenedor-texto .texto .profesion {
     margin: 1%;
     display: none;
     float: left;
-    overflow: hidden;
 }
 
 .Proyectos .card {
